@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade de Bicho 🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caixa">
+        <h1>🐾 Qual a sua idade de bicho?</h1>
+        
+        <label for="idade">Quantos anos você tem?</label>
+        <input id="idade" type="number" min="1" max="120" placeholder="Ex: 20">
+
+        <p>Escolha um animal:</p>
+        <div class="botoes">
+            <button data-animal="Cachorro">🐶 Cachorro</button>
+            <button data-animal="Gato">🐱 Gato</button>
+            <button data-animal="Coelho">🐰 Coelho</button>
+            <button data-animal="Hamster">🐹 Hamster</button>
+            <button data-animal="Cavalo">🐴 Cavalo</button>
+            <button data-animal="Tartaruga">🐢 Tartaruga</button>
+        </div>
+
+        <div id="resultado"></div>
+
+        <div class="historico-container">
+            <h3>Histórico de Consultas</h3>
+            <ul id="historico"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
